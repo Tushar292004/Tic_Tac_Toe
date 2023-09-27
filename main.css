@@ -1,0 +1,129 @@
+  /* font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Shantell+Sans&display=swap');
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Shantell Sans', cursive; */
+
+  /* variables */
+  :root{
+    --main-color: rgb(231, 123, 77);
+    --main-hover: rgb(216, 156, 130);
+    --submain-color: rgb(211, 136, 113);
+    --text1-color: rgb(227, 222, 215);
+    --text2-color: rgb(230, 224, 214);
+    --font1: 'Poppins', sans-serif;
+  }
+
+
+
+*{   
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background-color: var(--main-color);
+    /* background-color: rgb(29, 28, 28); */
+    color: var(--text1-color);
+    height: 80px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    font-family: var(--font1) ;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.dark_mode{
+    height: 80px;
+    position: relative;
+    color: var(--text1-color);
+    font-size: 40px;
+    padding: 9px 15px;
+    font-family: var(--font1) ;
+    float: right;
+}
+
+/* Game Part */
+
+.base{
+   /* background-color: var(--submain-color) ; */
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+.game{
+   display: grid;
+   grid-template-columns: repeat(3, 10vw);
+   grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid var(--text2-color);
+    color: var(--text2-color);
+    font-family: var(--font1);
+    font-size: 6vw;
+    cursor: pointer;
+    /* centering the content  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: var(--main-hover);
+    
+}
+
+.imgbox img{
+ width: 0;
+ transition: width 1s ease-in-out;
+}
+
+#reset{
+ margin: 0 25px;
+ padding: 6px 14px;
+ background: var(--main-color);
+ border-radius: 12px;
+ font-family: var(--font1);
+ font-size: 20px;
+ color: var(--text1-color);
+ border: 3px solid var(--text1-color);
+}
+
+.info{
+    font-size: 30px;
+    font-family: var(--font1);
+    color: var(--text1-color);
+}
+
+.gameInfo{
+    margin: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ultility classes  */
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
